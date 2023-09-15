@@ -1,0 +1,111 @@
+---
+
+---
+
+<nav class="flex justify-between px-4 sm:px-[150px]">
+  <a class="barra__logo">Portfolio<span class="barra__logo-punto">.</span></a>
+  <ul class="barra__links hidden md:flex space-x-10 justify-end">
+    <li class="barra__item ">
+      <a class="barra__link text-xs md:text-base barra__link--active" data-ref="1">Home</a>
+    </li>
+    <li class="barra__item">
+      <a class="barra__link text-xs md:text-base  " data-ref="2">Education & Experence</a>
+    </li>
+    <li class="barra__item">
+      <a class="barra__link text-xs md:text-base" data-ref="3">Skills</a>
+    </li>
+    <li class="barra__item">
+      <a class="barra__link text-xs md:text-base" data-ref="4">Proyects</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  *{
+    /* border: solid 1px red; */
+  }
+  .barra {
+    padding-top: 1vw;
+    background-color: var(--color-fondo);
+    padding-inline: 4vw;
+  }
+
+  .barra__logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .barra__logo-punto {
+    color: var(--color-azul);
+    font-size: 1.5rem;
+  }
+
+  .barra__links {
+    width: 50%;
+    cursor: pointer;
+    
+  }
+
+  .barra__item {
+    display: flex;
+    align-items: end;
+    list-style: none;
+    font-size: 1.15rem;
+  }
+
+  .barra__link {
+    font-weight: 500;
+  }
+
+  .barra__link--active {
+    font-weight: 300;
+    color: var(--color-azul);
+  }
+
+</style>
+
+<script>
+  const links = document.querySelector(".barra__links");
+  const link = document.querySelectorAll(".barra__link");
+  const logo = document.querySelector('.barra__logo');
+
+  links!.addEventListener("click", function (e) {
+    const click = e.target as HTMLElement;
+    const id = click.getAttribute("data-ref");
+
+    console.log(click);
+    // document.querySelector(`[id="${id}"]`).classList.remove('hidden');
+
+    // document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+
+    if (click.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.remove("barra__link--active");
+      });
+      click.classList.add("barra__link--active");
+    }
+  });
+
+  //////////////////////////////// OPACIDAD BOTONES //////////////////////////////////
+
+  links!.addEventListener("mouseover", function (e) {
+    const over = e.target as HTMLElement;
+    if (over!.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.add("opacity");
+      });
+      over.classList.remove("opacity");
+      logo!.classList.add("opacity");
+    }
+  });
+
+  links!.addEventListener("mouseout", function (e) {
+    const over = e.target as HTMLElement;
+    if (over.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.remove("opacity");
+      });
+      logo!.classList.remove("opacity");
+    }
+  });
+</script>
