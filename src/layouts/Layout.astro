@@ -31,6 +31,7 @@ const { title } = Astro.props;
     --color-azul-75: #0bceae86;
     --color-blancoRoto: #ffffff83;
     --color-rojo: #ff5380;
+    --color-amarillo: #fbdd62;
   }
   *{
     margin: 0;
@@ -38,10 +39,16 @@ const { title } = Astro.props;
     box-sizing: border-box;
     background-color: var(--color-fondo);
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
     color: #ffffff;
+    font-weight: 300;
+    cursor: url(../../public/cursorA.png),auto;
     
   }
+
+  .cursor{
+    cursor: url(../../public/cursorB.png),auto;
+  }
+
   .opacity {
   opacity: 25%;
   transition: 300ms;

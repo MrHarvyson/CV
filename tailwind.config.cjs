@@ -5,6 +5,8 @@ module.exports = {
 		extend: {
 			colors: {
 				'azul': '#0bceaf',
+				'fondo':'#2c2d30',
+				'amarillo':'#fbdd6',
 			  },
 		},
 		screens: {
