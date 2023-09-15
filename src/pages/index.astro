@@ -5,6 +5,17 @@ import Intro from '../components/Intro.astro';
 ---
 
 <Layout title="José Carlos Moreno Martín">
-	<Nav ></Nav>
-	<Intro></Intro>
+	<div class="flex flex-col ">
+
+		<div class="fixed z-10 top-0 w-full">
+
+			<Nav ></Nav>
+		</div>
+		<div class="relative z-1">
+
+			<Intro></Intro>
+		</div>
+
+		<Intro></Intro>
+	</div>
 </Layout>
