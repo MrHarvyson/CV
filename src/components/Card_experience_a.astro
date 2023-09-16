@@ -1,0 +1,49 @@
+---
+interface Props{
+    img: string,
+    titulo: string,
+    empresa: string,
+    ano: string,
+}
+
+const {img, titulo, empresa, ano} = Astro.props;
+---
+
+
+<div class="flex justify-center h-[250px] w-full ">
+
+    <div class=" relative">
+    
+        <div class="h-3 w-3 rounded-full bg-rojo relative top-1/2 z-20">
+        </div>
+        <div class="border-r border-white border-opacity-[20%] h-[250px] absolute top-1/2 left-1/2 transform -translate-x-1/2 z-10"></div>
+
+        
+        <div class="flex justify-center relative top-1/2 z-10">
+
+            <div class="flex flex-col absolute left-20 top-1/2 transform -translate-y-1/2 w-[400px] bg-white bg-opacity-[2%] p-5 rounded-xl">
+                <a class="text-rojo pb-5 font-medium">{ano}</a>
+                <div class="flex flex-col ">
+                    <a class="text-2xl font-semibold pb-2">{titulo}</a>
+                    <a class="text-white/[30%]">{empresa}</a>
+                </div>
+            </div>
+
+            <div class="flex  absolute right-20  -translate-y-1/2  w-[175px]">
+                <img src={img}>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    
+
+</div>
+
+<!-- <style>
+    *{
+        border: solid 1px rgba(255, 0, 0, 0.212);
+    }
+</style> -->
