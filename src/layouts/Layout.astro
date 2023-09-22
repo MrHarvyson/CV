@@ -18,11 +18,12 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
     <title>{title}</title>
   </head>
   <body>
@@ -34,14 +35,15 @@ const { title } = Astro.props;
   :root {
     --color-fondo: #2c2d30;
     --color-barra-oscuro: #2c2d30;
-    --color-barra-claro: #343539f6;
+    --color-barra-claro: #343539c0;
     --color-azul: #0bceaf;
     --color-azul-75: #0bceae86;
     --color-blancoRoto: #ffffff83;
     --color-rojo: #ff5380;
     --color-amarillo: #fbdd62;
   }
-  *{
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,24 +51,26 @@ const { title } = Astro.props;
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     font-weight: 300;
-    cursor: url(../../public/cursorA.png),auto;
-    
+    cursor: url(../../public/cursorA.png), auto;
   }
+
   html{
     background-color: var(--color-fondo);
   }
+ 
 
-
-  .cursor{
-    cursor: url(../../public/cursorB.png),auto;
+  .cursor {
+    cursor: url(../../public/cursorB.png), auto;
   }
 
   .opacity {
-  opacity: 25%;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -ms-transition: 300ms;
-  -o-transition: 300ms;
-}
+    opacity: 25%;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+  }
 </style>
+
+
