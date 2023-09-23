@@ -7,6 +7,7 @@ interface Props{
 }
 
 const {img, titulo, empresa, ano} = Astro.props;
+
 ---
 
 
@@ -21,15 +22,15 @@ const {img, titulo, empresa, ano} = Astro.props;
         
         <div class="flex justify-center relative top-1/2 z-10">
 
-            <div class="flex flex-col absolute left-20 top-1/2 transform -translate-y-1/2 w-[400px] bg-white bg-opacity-[2%] p-5 rounded-xl">
-                <a class="text-rojo pb-5 font-medium">{ano}</a>
+            <div class="flex flex-col absolute left-20 top-1/2 transform -translate-y-1/2 w-[400px] bg-white bg-opacity-[0%] p-5 rounded-xl">
+                <a class="text-rojo pb-5 font-medium text-lg">{ano}</a>
                 <div class="flex flex-col ">
-                    <a class="text-2xl font-semibold pb-2">{titulo}</a>
-                    <a class="text-white/[30%]">{empresa}</a>
+                    <a class="text-xl font-bold pb-2">{titulo}</a>
+                    <a class="text-white/[30%] text-base">{empresa}</a>
                 </div>
             </div>
 
-            <div class="flex  absolute right-20  -translate-y-1/2  w-[150px] h-[150px]">
+            <div class="flex  absolute right-20  -translate-y-1/2  w-[125px] h-[125px]">
                 <img src={img}>
             </div>
 

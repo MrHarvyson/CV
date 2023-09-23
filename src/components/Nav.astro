@@ -3,7 +3,7 @@
 ---
 
 <header
-  class="barra flex justify-between items-center px-4 lg:px-[300px] pt-7 pb-5 backdrop-filter backdrop-blur-md scrollnav--oscuro"
+  class="barra flex justify-between items-center px-4 lg:px-[5%] pt-7 pb-5 backdrop-filter backdrop-blur-md scrollnav--oscuro"
 >
   <!-- Logo -->
   <a class="barra__logo font-bold text-2xl flex flex-grow basis-0"
@@ -11,7 +11,7 @@
   >
 
   <!-- Menu -->
-  <!-- <nav>
+  <nav>
     <ul class="barra__links hidden sm:flex justify-end [&>li]:flex items-end [&>li>a]:px-4 [&>li>a]:text-base">
       <li>
         <a class="barra__link cursor barra__link--active" data-ref="1">Home</a>
@@ -26,7 +26,7 @@
         <a class="barra__link cursor" data-ref="4">Proyects</a>
       </li>
     </ul>
-  </nav> -->
+  </nav>
 
   <!-- Redes sociales -->
 
@@ -96,52 +96,52 @@
   const logo = document.querySelectorAll(".barra__logo");
 
   // seleccion elementos
-  // links!.addEventListener("click", function (e) {
-  //   const click = e.target as HTMLElement;
-  //   const id = click.getAttribute("data-ref");
+  links!.addEventListener("click", function (e) {
+    const click = e.target as HTMLElement;
+    const id = click.getAttribute("data-ref");
 
-  //   // document.querySelector(`[id="${id}"]`).classList.remove('hidden');
-  //   // document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+    // document.querySelector(`[id="${id}"]`).classList.remove('hidden');
+    // document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 
-  //   if (click.classList.contains("barra__link")) {
-  //     link.forEach(function (e) {
-  //       e.classList.remove("barra__link--active");
-  //     });
-  //     click.classList.add("barra__link--active");
-  //   }
-  // });
+    if (click.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.remove("barra__link--active");
+      });
+      click.classList.add("barra__link--active");
+    }
+  });
   
   // opacidad elementos
   
-  // links!.addEventListener("mouseover", function (e) {
-  //   const over = e.target as HTMLElement;
-  //   if (over!.classList.contains("barra__link")) {
-  //     link.forEach(function (e) {
-  //       e.classList.add("opacity");
-  //     });
-  //     over.classList.remove("opacity");
-  //     logo.forEach(function (e) {
-  //       e.classList.add("opacity");
-  //     });
-  //   }
-  // });
+  links!.addEventListener("mouseover", function (e) {
+    const over = e.target as HTMLElement;
+    if (over!.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.add("opacity");
+      });
+      over.classList.remove("opacity");
+      logo.forEach(function (e) {
+        e.classList.add("opacity");
+      });
+    }
+  });
 
-  // links!.addEventListener("mouseout", function (e) {
-  //   const over = e.target as HTMLElement;
-  //   if (over.classList.contains("barra__link")) {
-  //     link.forEach(function (e) {
-  //       e.classList.remove("opacity");
-  //     });
-  //     logo.forEach(function (e) {
-  //       e.classList.remove("opacity");
-  //     });
-  //   }
-  // });
+  links!.addEventListener("mouseout", function (e) {
+    const over = e.target as HTMLElement;
+    if (over.classList.contains("barra__link")) {
+      link.forEach(function (e) {
+        e.classList.remove("opacity");
+      });
+      logo.forEach(function (e) {
+        e.classList.remove("opacity");
+      });
+    }
+  });
   
   // transmision nav
 
   window.addEventListener('scroll', function() {
-      const alturaY = 100; // La altura de Y en la que deseas activar el evento
+      const alturaY = 75; // La altura de Y en la que deseas activar el evento
       
       
       if (window.scrollY >= alturaY) {
