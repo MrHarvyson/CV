@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://AstroCV.github.io/index.html",
+  site: "https://mrharvyson.github.io",
   integrations: [tailwind()],
 })
