@@ -7,5 +7,8 @@ export default defineConfig({
   site: 'https://mrharvyson.github.io',
   //base: 'Astro',
   integrations: [
-    tailwind()],
+    tailwind({
+      config: { applyBaseStyle: false },
+    }
+    )],
 })
