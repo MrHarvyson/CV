@@ -7,6 +7,5 @@ export default defineConfig({
   site: 'https://mrharvyson.github.io',
   //base: 'Astro',
   integrations: [
-    sitemap(),
     tailwind()],
 })
