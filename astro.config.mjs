@@ -6,9 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://mrharvyson.github.io',
   base: 'Astro',
-  integrations:
-    tailwind({
-      // Example: Provide a custom path to a Tailwind config file
-      configFile: './custom-config.mjs',
-    }),
+  integrations: [
+    tailwind()],
 })
