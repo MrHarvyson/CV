@@ -1,19 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Intro from '../components/Intro.astro';
-import Experience from '../components/Experience.astro';
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Intro from "../components/Intro.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout title="José Carlos Moreno Martín">
+  <div class="fixed z-40 top-0 w-full">
+    <Nav />
+  </div>
 
-	<div class="fixed z-40 top-0 w-full">
-		<Nav ></Nav>
-	</div>
-	
-	<Intro></Intro>
-	<Experience></Experience>
-	<Intro></Intro>
-		
-
+  <Intro />
+  <Experience />
+  <Intro />
 </Layout>
