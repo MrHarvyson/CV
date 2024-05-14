@@ -6,29 +6,27 @@
   class="barra flex justify-between items-center px-4 lg:px-[5%] pt-7 pb-5 backdrop-filter backdrop-blur-md scrollnav--oscuro"
 >
   <!-- Logo -->
-  <a class="barra__logo font-bold text-2xl flex flex-grow basis-0"
-    >Portfolio<span class="text-azul font-bold text-2xl">.</span>
-  </a>
+  <p class="barra__logo font-bold text-2xl flex basis-0">
+    Portfolio<span class="text-azul font-bold text-2xl">.</span>
+  </p>
 
   <!-- Menu -->
   <nav>
     <ul
-      class="barra__links hidden sm:flex justify-end [&>li]:flex items-end [&>li>a]:px-4 [&>li>a]:text-base"
+      class="barra__links flex gap-14 [&>li>a]:text-base [&>li>a]:cursor-pointer"
     >
       <li>
-        <a
-          href="#idhome"
-          class="barra__link cursor barra__link--active"
-          data-ref="1">Home</a
+        <a href="#idhome" class="barra__link barra__link--active" data-ref="1"
+          >Home</a
         >
       </li>
       <li>
-        <a href="#idexperiencia" class="barra__link cursor" data-ref="2"
+        <a href="#idexperiencia" class="barra__link" data-ref="2"
           >Education & Experience</a
         >
       </li>
       <li>
-        <a href="idskills" class="barra__link cursor" data-ref="3">Skills</a>
+        <a href="#idskills" class="barra__link" data-ref="3">Skills</a>
       </li>
       <li>
         <a class="barra__link cursor" data-ref="4">Proyects</a>
@@ -38,8 +36,8 @@
 
   <!-- Redes sociales -->
 
-  <nav class="flex flex-grow basis-0 justify-end">
-    <a href="" class="barra__item pr-5">
+  <nav class="flex barra__links basis-0">
+    <a href="" class="barra__link pr-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -53,7 +51,11 @@
         ></path>
       </svg>
     </a>
-    <a href="" class="barra__item">
+    <a
+      href="https://www.linkedin.com/in/jose-carlos-moreno-martin-00201362/"
+      target="_blank"
+      class="barra__link"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -104,9 +106,6 @@
   links!.addEventListener("click", function (e) {
     const click = e.target as HTMLElement;
     const id = click.getAttribute("data-ref");
-
-    // document.querySelector(`[id="${id}"]`).classList.remove('hidden');
-    // document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 
     if (click.classList.contains("barra__link")) {
       link.forEach(function (e) {

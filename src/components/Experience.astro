@@ -1,45 +1,65 @@
 ---
 import CardExperienceA from "./Card_experience_a.astro";
-import CardExperienceB from "./Card_experience_b.astro";
+import CardExperienceFinal from "./Card_experience_final.astro";
 ---
 
-<section id="idexperiencia">
+<div class="h-24" id="idexperiencia"></div>
+<section class="overflow-hidden pb-[200px]">
   <a class="flex justify-center font-bold text-6xl">
     Education & <span class="font-bold text-6xl text-rojo"
-      >&nbsp Expecience</span
+      >&nbsp Experience</span
     ></a
   >
 
-  <div class="flex flex-col mt-[150px]">
+  <div class="flex flex-col mt-[100px]">
+    <CardExperienceA
+      img="images/viewnextBlanco.png"
+      titulo="Sofware Developer Microservice Java"
+      descripcion="Migración de base de datos con microservicios y creación de contenedores Docker."
+      ano=" | 2023 - Actualmente"
+      empresa="VIEWNEXT"
+    />
+    <CardExperienceA
+      img="images/vedrunaBlanco.png"
+      titulo="Profesor de Desarrollo de Aplicaciones Multiplataforma y Web"
+      descripcion="Profesor de primero y segundo curso. Asignaturas de base de datos, programación, lenguaje de marcas y multimedia."
+      ano=" | 2023 - Actualmente"
+      empresa="VEDRUNA"
+    />
     <CardExperienceA
       img="images/deloitte_blanco.png"
       titulo="Frontend Developer"
-      empresa="Deloitte"
-      ano="2023"
+      descripcion="Creación de aplicación con Flutter."
+      ano=" | 2023"
+      empresa="DELOITTE"
     />
-    <CardExperienceB
+    <CardExperienceA
       img="images/vedrunaBlanco.png"
-      titulo="Multiplatform Apps Developer"
-      empresa="Vedruna"
-      ano="2021 - 2023"
+      titulo="Education: Multiplatform Apps Developer"
+      descripcion="Formación profesional en Desarrollo de Aplicaciones Multiplataforma."
+      ano=" | 2021 - 2023"
+      empresa="VEDRUNA"
     />
     <CardExperienceA
       img="images/penduloBlanco.png"
-      titulo="Computer Graphics Generalis"
-      empresa="Pendulo Studio"
-      ano="2017 - 2018"
-    />
-    <CardExperienceB
-      img="images/boneBlanco.png"
-      titulo="Computer Graphics Generalis"
-      empresa="Bone Studio"
-      ano="2016 - 2018"
+      titulo="Computer Graphics Generalist"
+      descripcion="Pendulo Studio"
+      ano=" | 2017 - 2018"
+      empresa="PENDULO STUDIO"
     />
     <CardExperienceA
+      img="images/boneBlanco.png"
+      titulo="Computer Graphics Generalist"
+      descripcion="Bone Studio"
+      ano=" | 2016 - 2018"
+      empresa="BONE STUDIO"
+    />
+    <CardExperienceFinal
       img="images/whiteBlanco.png"
-      titulo="Computer Graphics Generalis"
-      empresa="Whiteline Studio"
-      ano="2014 - 2016"
+      titulo="Computer Graphics Generalist"
+      descripcion="Whiteline Studio"
+      ano=" | 2014 - 2016"
+      empresa="WHITELINE STUDIO"
     />
   </div>
 </section>
