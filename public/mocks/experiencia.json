@@ -1,0 +1,51 @@
+[
+    {
+        "img": "images/viewnextBlanco.png",
+        "empresa": "VIEWNEXT",
+        "ano": " | 2023 - Actualmente",
+        "titulo": "Software Developer Microservice Java",
+        "descripcion": "Migración de base de datos con microservicios y creación de contenedores Docker."
+    },
+    {
+        "img": "images/vedrunaBlanco.png",
+        "empresa": "VEDRUNA",
+        "ano": " | 2023 - Actualmente",
+        "titulo": "Profesor de Desarrollo de Aplicaciones Multiplataforma y Web",
+        "descripcion": "Profesor de primero y segundo curso. Asignaturas de base de datos, programación, lenguaje de marcas y multimedia."
+    },
+    {
+        "img": "images/deloitte_blanco.png",
+        "empresa": "DELOITTE",
+        "ano": " | 2023",
+        "titulo": "Frontend Developer",
+        "descripcion": "Creación de aplicación con Flutter."
+    },
+    {
+        "img": "images/vedrunaBlanco.png",
+        "empresa": "VEDRUNA",
+        "ano": " | 2021 - 2023",
+        "titulo": "Education: Multiplatform Apps Developer",
+        "descripcion": "Formación profesional en Desarrollo de Aplicaciones Multiplataforma."
+    },
+    {
+        "img": "images/penduloBlanco.png",
+        "empresa": "PENDULO STUDIO",
+        "ano": " | 2017 - 2018",
+        "titulo": "Computer Graphics Generalist",
+        "descripcion": "Pendulo Studio"
+    },
+    {
+        "img": "images/boneBlanco.png",
+        "empresa": "BONE STUDIO",
+        "ano": " | 2016 - 2018",
+        "titulo": "Computer Graphics Generalist",
+        "descripcion": "Bone Studio"
+    },
+    {
+        "img": "images/whiteBlanco.png",
+        "empresa": "WHITELINE STUDIO",
+        "ano": " | 2014 - 2016",
+        "titulo": "Computer Graphics Generalist",
+        "descripcion": "Whiteline Studio"
+    }
+]

@@ -6,7 +6,7 @@ interface Props {
   ano: string;
 }
 
-const { img, titulo, empresa, ano } = Astro.props;
+const { img, titulo, empresa, ano } = Astro.props as Props;
 ---
 
 <div class="flex flex-col items-start">

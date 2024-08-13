@@ -1,6 +1,7 @@
 ---
 import CardExperience from "./Card_experience.astro";
 import CardExperienceFinal from "./Card_experience_final.astro";
+import experiencia from "../../public/mocks/experiencia.json";
 ---
 
 <div class="h-24" id="idexperiencia"></div>
@@ -12,55 +13,24 @@ import CardExperienceFinal from "./Card_experience_final.astro";
   >
 
   <div class="flex flex-col mt-[100px]">
-    <CardExperience
-      img="images/viewnextBlanco.png"
-      empresa="VIEWNEXT"
-      ano="  |  2023 - Actualmente"
-      titulo="Sofware Developer Microservice Java"
-      descripcion="Migración de base de datos con microservicios y creación de contenedores Docker."
-    />
-    <CardExperience
-      img="images/vedrunaBlanco.png"
-      empresa="VEDRUNA"
-      ano="  |  2023 - Actualmente"
-      titulo="Profesor de Desarrollo de Aplicaciones Multiplataforma y Web"
-      descripcion="Profesor de primero y segundo curso. Asignaturas de base de datos, programación, lenguaje de marcas y multimedia."
-    />
-    <CardExperience
-      img="images/deloitte_blanco.png"
-      empresa="DELOITTE"
-      ano="  |  2023"
-      titulo="Frontend Developer"
-      descripcion="Creación de aplicación con Flutter."
-    />
-    <CardExperience
-      img="images/vedrunaBlanco.png"
-      empresa="VEDRUNA"
-      ano="  |  2021 - 2023"
-      titulo="Education: Multiplatform Apps Developer"
-      descripcion="Formación profesional en Desarrollo de Aplicaciones Multiplataforma."
-    />
-    <CardExperience
-      img="images/penduloBlanco.png"
-      empresa="PENDULO STUDIO"
-      ano="  |  2017 - 2018"
-      titulo="Computer Graphics Generalist"
-      descripcion="Pendulo Studio"
-    />
-    <CardExperience
-      img="images/boneBlanco.png"
-      empresa="BONE STUDIO"
-      ano="  |  2016 - 2018"
-      titulo="Computer Graphics Generalist"
-      descripcion="Bone Studio"
-    />
-    <CardExperienceFinal
-      img="images/whiteBlanco.png"
-      empresa="WHITELINE STUDIO"
-      ano="  |  2014 - 2016"
-      titulo="Computer Graphics Generalist"
-      descripcion="Whiteline Studio"
-    />
+    {
+      experiencia.map((exp, index) => {
+        // Definir el componente a utilizar según la condición
+        const CardComponent =
+          index === experiencia.length - 1
+            ? CardExperienceFinal
+            : CardExperience;
+        return (
+          <CardComponent
+            img={exp.img}
+            empresa={exp.empresa}
+            ano={exp.ano}
+            titulo={exp.titulo}
+            descripcion={exp.descripcion}
+          />
+        );
+      })
+    }
   </div>
 </section>
 

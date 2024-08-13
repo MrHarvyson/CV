@@ -3,11 +3,7 @@
 ---
 
 <section id="idhome">
-  <!-- este div es para hacer efecto card de midudev -->
   <div class="flex justify-center gap-[5%] items-center h-screen">
-    <!-- <div class="bg-white bg-opacity-[2%] rounded-xl w-[1300px] h-[600px] absolute ">
-
-            </div> -->
     <div
       class="flex flex-col justify-center [&>p]:flex [&>p]:justify-end relative"
     >
@@ -34,7 +30,6 @@
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-
       const target = document.querySelector(this.getAttribute("href"));
       target.scrollIntoView({
         behavior: "smooth",
