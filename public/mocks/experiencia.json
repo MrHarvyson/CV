@@ -1,48 +1,55 @@
 [
     {
-        "img": "images/viewnextBlanco.png",
+        "imgBlanco": "images/viewnextBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "VIEWNEXT",
         "ano": " | 2023 - Actualmente",
         "titulo": "Software Developer Microservice Java",
-        "descripcion": "Migración de base de datos con microservicios y creación de contenedores Docker."
+        "descripcion": "Desarrollo de microservicios para GISS (Gerencia de Informática de la Seguridad Social). Desarrollo, creación e investigación de microservicios en Spring Boot. Creación de contenedores Docker para garantizar la homogeneidad de las herramientas utilizadas por el equipo."
     },
     {
-        "img": "images/vedrunaBlanco.png",
+        "imgBlanco": "images/vedrunaBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "VEDRUNA",
         "ano": " | 2023 - Actualmente",
         "titulo": "Profesor de Desarrollo de Aplicaciones Multiplataforma y Web",
-        "descripcion": "Profesor de primero y segundo curso. Asignaturas de base de datos, programación, lenguaje de marcas y multimedia."
+        "descripcion": "Profesor de Ciclo Formativo de Grado Superior (CFGS) en los curso de primero y segundo de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma (DAM).Asignaturas impartidas: Programación (Java), Base de datos (MySQL, MongoDB), Programación multimedia y dispositivos móviles (Unity, Android Studio), Diseño de interfaces web (HTML, CSS avanzado, Figma, Flutter, React Native)"
     },
     {
-        "img": "images/deloitte_blanco.png",
+        "imgBlanco": "images/deloitte_blanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "DELOITTE",
         "ano": " | 2023",
         "titulo": "Frontend Developer",
-        "descripcion": "Creación de aplicación con Flutter."
+        "descripcion": "Desarrollador de aplicaciones moviles con Flutter."
     },
     {
-        "img": "images/vedrunaBlanco.png",
+        "imgBlanco": "images/vedrunaBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "VEDRUNA",
         "ano": " | 2021 - 2023",
         "titulo": "Education: Multiplatform Apps Developer",
         "descripcion": "Formación profesional en Desarrollo de Aplicaciones Multiplataforma."
     },
     {
-        "img": "images/penduloBlanco.png",
+        "imgBlanco": "images/penduloBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "PENDULO STUDIO",
         "ano": " | 2017 - 2018",
         "titulo": "Computer Graphics Generalist",
-        "descripcion": "Pendulo Studio"
+        "descripcion": "Modelado de props para el video juego BlackSad"
     },
     {
-        "img": "images/boneBlanco.png",
+        "imgBlanco": "images/boneBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "BONE STUDIO",
         "ano": " | 2016 - 2018",
         "titulo": "Computer Graphics Generalist",
         "descripcion": "Bone Studio"
     },
     {
-        "img": "images/whiteBlanco.png",
+        "imgBlanco": "images/whiteBlanco.png",
+        "imgColor": "images/vedrunaColor.png",
         "empresa": "WHITELINE STUDIO",
         "ano": " | 2014 - 2016",
         "titulo": "Computer Graphics Generalist",
