@@ -11,12 +11,13 @@ import experiencia from "../../public/mocks/experiencia.json";
     ></a
   >
 
-  <div class="card flex flex-col mt-40 gap-20">
+  <div class="cards flex flex-col mt-40 gap-20">
     {
       experiencia.map((exp) => {
         return (
           <CardExperience
-            img={exp.imgBlanco}
+            imgBlanco={exp.imgBlanco}
+            imgColor={exp.imgColor}
             empresa={exp.empresa}
             ano={exp.ano}
             titulo={exp.titulo}
@@ -27,3 +28,25 @@ import experiencia from "../../public/mocks/experiencia.json";
     }
   </div>
 </section>
+
+<script>
+  const cards = document.querySelector(".card");
+
+  cards!.addEventListener("mouseover", function (e) {
+    const over = e.target as HTMLElement;
+    const imgBlanco = this.querySelector(".blanco");
+    const imgColor = this.querySelector(".color");
+    imgBlanco.classList.add("hidden");
+    imgColor.classList.remove("hidden");
+    console.log(imgBlanco);
+  });
+
+  cards!.addEventListener("mouseout", function (e) {
+    const over = e.target as HTMLElement;
+    const imgBlanco = this.querySelector(".blanco");
+    const imgColor = this.querySelector(".color");
+    imgColor.classList.add("hidden");
+    imgBlanco.classList.remove("hidden");
+    console.log(imgBlanco);
+  });
+</script>
