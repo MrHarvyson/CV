@@ -10,17 +10,17 @@ interface Props {
 const { img, titulo, descripcion, ano, empresa } = Astro.props;
 ---
 
-<div class="flex justify-center h-[250px] w-full pr-[175px]">
+<div class="card flex justify-center h-[250px] w-full pr-[175px]">
   <div class="relative">
     <div class="h-3 w-3 rounded-full bg-rojo relative top-1/2 z-20"></div>
     <div
-      class="border-r border-white border-opacity-[20%] h-[250px] absolute top-1/2 left-1/2 transform -translate-x-1/2 z-10"
+      class="border-r border-white h-[450px] absolute top-1/2 left-1/2 transform -translate-x-1/2 z-10"
     >
     </div>
 
     <div class="flex justify-center relative top-1/2 z-10">
       <div
-        class="flex flex-col absolute left-20 top-1/2 transform -translate-y-1/2 w-[500px] bg-white bg-opacity-[0%] p-5 rounded-xl"
+        class="flex flex-col absolute left-20 top-1/2 transform -translate-y-1/2 w-[500px] p-5 rounded-xl"
       >
         <div class="flex flex-col w-[600px]">
           <p class="text-rojo pb-5 font-medium text-2xl">

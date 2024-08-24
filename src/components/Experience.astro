@@ -4,20 +4,19 @@ import experiencia from "../../public/mocks/experiencia.json";
 ---
 
 <div class="h-24" id="idexperiencia"></div>
-<section class="overflow-hidden pb-[200px]">
+<section class="pb-[200px] pt-10">
   <a class="flex justify-center font-bold text-6xl">
-    Education & <span class="font-bold text-6xl text-rojo"
+    Education & <span class="font-bold text-6xl text-azul"
       >&nbsp Experience</span
     ></a
   >
 
-  <div class="cards flex flex-col mt-40 gap-20">
+  <div class="cards flex flex-col pt-[175px] gap-[125px]">
     {
       experiencia.map((exp) => {
         return (
           <CardExperience
             imgBlanco={exp.imgBlanco}
-            imgColor={exp.imgColor}
             empresa={exp.empresa}
             ano={exp.ano}
             titulo={exp.titulo}

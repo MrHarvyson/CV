@@ -8,7 +8,7 @@ module.exports = {
 				'fondo': '#2c2d30',
 				'amarillo': '#fbdd62',
 				'rojo': '#ff5380',
-				'texto_simple': 'rgba(255, 255, 255, 0.3)'
+				'texto_simple': 'rgba(255, 255, 255, 0.6)'
 			},
 		},
 		screens: {
