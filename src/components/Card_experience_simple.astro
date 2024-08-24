@@ -12,13 +12,24 @@ const { imgBlanco, imgColor, titulo, descripcion, ano, empresa } = Astro.props;
 ---
 
 <div class="card flex justify-center items-center w-full gap-20">
-  <img class="blanco w-[150px] h-[150px]" src={imgBlanco} />
-  <img class="hidden color w-[150px] h-[150px]" src={imgColor} />
+  <div class="relative w-[150px] h-[150px]">
+    <img
+      class="blanco absolute w-full h-full transition-opacity duration-700 ease-in-out"
+      src={imgBlanco}
+    />
+    <img
+      class="color absolute w-full h-full opacity-0 transition-opacity duration-700 ease-in-out"
+      src={imgColor}
+    />
+  </div>
   <div class="flex flex-col w-[600px]">
-    <p class="text-rojo pb-5 font-medium text-4xl">
-      {empresa}<span class="font-light text-base">{ano}</span>
-    </p>
-    <p class="text-xl font-bold pb-2">{titulo}</p>
-    <p class="text-white/[30%] text-base">{descripcion}</p>
+    <div class="flex items-end justify-between pb-6">
+      <p class="text-rojo font-bold text-4xl leading-none">
+        {empresa}
+      </p>
+      <p class="font-light text-base leading-none text-texto_simple">{ano}</p>
+    </div>
+    <p class="text-xl font-medium pb-2">{titulo}</p>
+    <p class="text-texto_simple text-base">{descripcion}</p>
   </div>
 </div>

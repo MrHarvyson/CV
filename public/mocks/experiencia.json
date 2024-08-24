@@ -1,7 +1,7 @@
 [
     {
         "imgBlanco": "images/viewnextBlanco.png",
-        "imgColor": "images/vedrunaColor.png",
+        "imgColor": "images/viewnextColor.png",
         "empresa": "VIEWNEXT",
         "ano": " | 2023 - Actualmente",
         "titulo": "Software Developer Microservice Java",
@@ -48,8 +48,8 @@
         "descripcion": "Bone Studio"
     },
     {
-        "imgBlanco": "images/whiteBlanco.png",
-        "imgColor": "images/vedrunaColor.png",
+        "imgBlanco": "images/logoWhitelineBlanco.png",
+        "imgColor": "images/logoWhitelineColor.png",
         "empresa": "WHITELINE STUDIO",
         "ano": " | 2014 - 2016",
         "titulo": "Computer Graphics Generalist",

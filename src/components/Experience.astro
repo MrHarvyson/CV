@@ -30,23 +30,35 @@ import experiencia from "../../public/mocks/experiencia.json";
 </section>
 
 <script>
-  const cards = document.querySelector(".card");
+  const cardsContainer = document.querySelector(".cards");
 
-  cards!.addEventListener("mouseover", function (e) {
-    const over = e.target as HTMLElement;
-    const imgBlanco = this.querySelector(".blanco");
-    const imgColor = this.querySelector(".color");
-    imgBlanco.classList.add("hidden");
-    imgColor.classList.remove("hidden");
-    console.log(imgBlanco);
+  cardsContainer!.addEventListener("mouseover", function (e) {
+    const targetElement = e.target as HTMLElement;
+    const cardElement = targetElement.closest(".card");
+
+    if (cardElement) {
+      cardElement.classList.remove("opacity");
+
+      const imgBlanco = cardElement.querySelector(".blanco");
+      const imgColor = cardElement.querySelector(".color");
+
+      imgBlanco!.classList.add("opacity-0");
+      imgColor!.classList.remove("opacity-0");
+    }
   });
 
-  cards!.addEventListener("mouseout", function (e) {
-    const over = e.target as HTMLElement;
-    const imgBlanco = this.querySelector(".blanco");
-    const imgColor = this.querySelector(".color");
-    imgColor.classList.add("hidden");
-    imgBlanco.classList.remove("hidden");
-    console.log(imgBlanco);
+  cardsContainer!.addEventListener("mouseout", function (e) {
+    const targetElement = e.target as HTMLElement;
+    const cardElement = targetElement.closest(".card");
+
+    if (cardElement) {
+      cardElement.classList.remove("opacity");
+
+      const imgBlanco = cardElement.querySelector(".blanco");
+      const imgColor = cardElement.querySelector(".color");
+
+      imgColor!.classList.add("opacity-0");
+      imgBlanco!.classList.remove("opacity-0");
+    }
   });
 </script>
