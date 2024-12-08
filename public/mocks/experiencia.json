@@ -1,6 +1,7 @@
     [
         {
             "imgBlanco": "images/viewnextBlanco.png",
+            "imgColor": "images/viewnextColor.png",
             "empresa": "VIEWNEXT",
             "ano": " | Noviembre 2023 - Actualmente",
             "titulo": "Software Developer Microservice Java",
@@ -8,6 +9,7 @@
         },
         {
             "imgBlanco": "images/vedrunaBlanco.png",
+            "imgColor": "images/vedrunaColor.png",
             "empresa": "VEDRUNA",
             "ano": " | Septiembre 2023 - Actualmente",
             "titulo": "Profesor de Desarrollo de Aplicaciones Multiplataforma y Web",
@@ -15,6 +17,7 @@
         },
         {
             "imgBlanco": "images/deloitte_blanco.png",
+            "imgColor": "images/deloitte_blanco.png",
             "empresa": "DELOITTE",
             "ano": " | Marzo 2023 - Junio 2023",
             "titulo": "Frontend Developer",
@@ -22,6 +25,7 @@
         },
         {
             "imgBlanco": "images/vedrunaBlanco.png",
+            "imgColor": "images/vedrunaColor.png",
             "empresa": "VEDRUNA",
             "ano": " | 2021 - 2023",
             "titulo": "Educación: Grado Superior de Desarrollo de Aplicaciones Multiplataforma",
@@ -29,6 +33,7 @@
         },
         {
             "imgBlanco": "images/penduloBlanco.png",
+            "imgColor": "images/penduloBlanco.png",
             "empresa": "PENDULO STUDIO",
             "ano": " | 2017 - 2018",
             "titulo": "Computer Graphics Generalist",
@@ -36,6 +41,7 @@
         },
         {
             "imgBlanco": "images/boneBlanco.png",
+            "imgColor": "images/viewnextColor.png",
             "empresa": "BONE STUDIO",
             "ano": " | 2016 - 2018",
             "titulo": "Computer Graphics Generalist",
@@ -43,6 +49,7 @@
         },
         {
             "imgBlanco": "images/logoWhitelineBlanco.png",
+            "imgColor": "images/viewnextColor.png",
             "empresa": "WHITELINE STUDIO",
             "ano": " | 2014 - 2016",
             "titulo": "Computer Graphics Generalist",
