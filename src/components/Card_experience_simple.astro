@@ -1,7 +1,7 @@
 ---
 interface Props {
   imgBlanco: string;
-  imgColor: string;
+  imgColor?: string;
   titulo: string;
   descripcion: string;
   ano: string;
@@ -18,7 +18,40 @@ const { imgBlanco, imgColor, titulo, descripcion, ano, empresa } = Astro.props;
     <p class="text-azul pb-5 font-medium text-4xl">
       {empresa}<span class="font-light text-base">{ano}</span>
     </p>
-    <p class="text-xl font-bold pb-2">{titulo}</p>
-    <p class="text-white/[30%] text-base">{descripcion}</p>
+
+    <div>
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute top-[6px] bottom-0 w-0.5 bg-gray-700"></div>
+
+        <!-- Event items -->
+        <div class="pl-4">
+          <!-- Item 1 -->
+          <div class="relative my-10">
+            <div
+              class="absolute top-[6px] -left-[21px] w-3 h-3 bg-gray-500 border-2 border-gray-500 rounded-full z-10"
+            >
+            </div>
+            <p>
+              <span class="font-semibold text-2xl text-gray-100"
+                >{titulo}
+              </span>
+              <span class="font-extralight text-m text-gray-500">hace</span>
+
+              <span class="ml-2 text-s text-gray-400">7d ago</span>
+            </p>
+            <div class="rounded-lg px-4 py-3 text-sm shadow">
+              <p class="text-gray-500">{descripcion}</p>
+
+              <p class="mt-1 text-gray-700">
+                Called client, they reassured me the invoice would be paid by
+                the 25th.
+              </p>
+              <p class="mt-2 text-xs text-gray-500">3d ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
