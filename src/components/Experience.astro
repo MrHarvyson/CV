@@ -1,5 +1,5 @@
 ---
-import CardExperience from "./Card_experience_simple.astro";
+import Proyectos from "./Proyectos.astro";
 import experiencia from "../../public/mocks/experiencia.json";
 ---
 
@@ -13,53 +13,9 @@ import experiencia from "../../public/mocks/experiencia.json";
 
   <div class="cards flex flex-col pt-[175px] gap-[125px]">
     {
-      experiencia.map((exp) => {
-        return (
-          <CardExperience
-            imgBlanco={exp.imgBlanco}
-            empresa={exp.empresa}
-            ano={exp.ano}
-            titulo={exp.titulo}
-            descripcion={exp.descripcion}
-          />
-        );
+      experiencia.map((experiencia) => {
+        return <Proyectos experiencia={experiencia} />;
       })
     }
   </div>
 </section>
-
-<script>
-  /*
-  const cardsContainer = document.querySelector(".cards");
-
-  cardsContainer!.addEventListener("mouseover", function (e) {
-    const targetElement = e.target as HTMLElement;
-    const cardElement = targetElement.closest(".card");
-
-    if (cardElement) {
-      cardElement.classList.remove("opacity");
-
-      const imgBlanco = cardElement.querySelector(".blanco");
-      const imgColor = cardElement.querySelector(".color");
-
-      imgBlanco!.classList.add("hidden");
-      imgColor!.classList.remove("hidden");
-    }
-  });
-
-  cardsContainer!.addEventListener("mouseout", function (e) {
-    const targetElement = e.target as HTMLElement;
-    const cardElement = targetElement.closest(".card");
-
-    if (cardElement) {
-      cardElement.classList.remove("opacity");
-
-      const imgBlanco = cardElement.querySelector(".blanco");
-      const imgColor = cardElement.querySelector(".color");
-
-      imgColor!.classList.add("hidden");
-      imgBlanco!.classList.remove("hidden");
-    }
-  });
-  */
-</script>
