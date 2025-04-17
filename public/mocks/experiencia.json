@@ -7,51 +7,107 @@
             "proyectos": [
                 {
                     "titulo": "🧑‍💻 Desarrollador de microservicios",
-                    "descripcion": "Desarrollo de microservicios para la GISS (Gerencia de Informática de la Seguridad Social).",
+                    "descripcion": "Durante mi colaboración con la Gerencia de Informática de la Seguridad Social (GISS), participé activamente en el desarrollo de soluciones orientadas a arquitecturas de microservicios.",
                     "tareas": [
-                        "🔹 Desarrollo de microservicios con Spring Boot (Java 21)",
-                        "🔹 Desarrollo de herramienta con Yeoman para la generación de proyectos mediante un esquema común. Lenguaje usado Javascript."
+                        "• Desarrollo de microservicios utilizando Spring Boot con Java 21, dentro de una arquitectura distribuida.",
+                        "• Implementación de interfaces de comunicación entre servicios mediante REST y gRPC.",
+                        "• Diseño y desarrollo de una herramienta personalizada con Yeoman (JavaScript) para la generación automatizada de proyectos, siguiendo un esquema común."
                     ],
                     "tecnologias": [
-                        "🔹 Java 21",
-                        "🔹 Spring Boot",
-                        "🔹 Apache Kafka",
-                        "🔹 REST - gRPC",
-                        "🔹 Base de datos (Oracle - Infinispan - Mongo)",
-                        "🔹 Docker",
-                        "🔹 Yeoman"
+                        "• Java 21",
+                        "• Spring Boot",
+                        "• Apache Kafka",
+                        "• REST - gRPC",
+                        "• Base de datos (Oracle - Infinispan - Mongo)",
+                        "• Docker",
+                        "• Yeoman"
                     ],
                     "ano": "Enero 2024 - Marzo 2025"
                 },
                 {
-                    "titulo": "🛠️ Implementación de sistema de mensajería",
-                    "descripcion": "Desarrollo de microservicios para la GISS (Gerencia de Informática de la Seguridad Social).",
+                    "titulo": "🧑‍💻 Desarrollador Junior",
+                    "descripcion": "Durante este proyecto, mi objetivo principal fue la homogeneización de herramientas para los equipos de desarrollo, asegurando entornos coherentes y reproducibles mediante el uso de contenedores. Este enfoque permitió estandarizar las configuraciones, reducir errores en la integración y mejorar la eficiencia de los procesos de desarrollo y pruebas en distintos entornos.",
                     "tareas": [
-                        "🔹 Configuración de Apache Kafka para la mensajería entre microservicios.",
-                        "🔹 Desarrollo de consumidores y productores para la integración de eventos."
+                        "• Diseño y creación de contenedores Docker personalizados, orientados a garantizar la homogeneidad en el uso de herramientas por parte de los distintos equipos de desarrollo.",
+                        "• Implementación de contenedores para distintas bases de datos, como Oracle, Infinispan y MongoDB, facilitando la replicación de entornos de prueba y desarrollo.",
+                        "• Creación de contenedores para herramientas de infraestructura crítica como: Kafka y Kafka Connect, para sistemas de mensajería basados en eventos; Akhq, como panel de administración para clústeres Kafka; Grafana y Prometheus, como soluciones de monitoreo, visualización y métricas del sistema."
                     ],
                     "tecnologias": [
-                        "🔹 Apache Kafka",
-                        "🔹 Spring Boot",
-                        "🔹 Docker",
-                        "🔹 MongoDB"
+                        "• Docker",
+                        "• Kafka",
+                        "• Akhq",
+                        "• Grafana",
+                        "• Prometheus",
+                        "• Oracle",
+                        "• MongoDB"
                     ],
-                    "ano": "Enero 2024 - Marzo 2025"
+                    "ano": "Noviembre 2023 - Enero 2024"
+                }
+            ]
+        },
+        {
+            "img": "images/vedrunaBlanco.png",
+            "empresa": "Fundación Vedruna Educación",
+            "ano": " | Noviembre 2023 - Actualmente",
+            "titulo": "Profesor de formación profesional",
+            "proyectos": [
+                {
+                    "titulo": "👨‍🏫 Profesor y Tutor de FP",
+                    "descripcion": "Profesor de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma siendo tutor de este. 🧑‍💻",
+                    "tareas": [
+                        "• Programación multimedia y dispositivos móviles (Unity): creación y desarrollo de videojuegos consumiendo microservicios para el login y guardado de datos. Lenguaje usado C# para la creación de scripts y Java 21 para al creación de microservicios con Spring Boot. Microservicios desplegados en Azure y base de datos usada Mongo Atlas.",
+                        "• Diseño de interfaces web (CSS avanzado, Figma, Astro, Tailwind, React Native, Expo Go): creación de diseños web y de aplicaciones con Figma. Creación de páginas web estáticas con Astro usando Tailwind para darle estilo, página desplegada en Github Action. Creación de aplicaciones móviles con React Native Expo Go consumiendo microservios creados con Spring Boot.",
+                        "• Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
+                        "• Apoyo Base de datos (MySQL, MongoDB)"
+                    ],
+                    "tecnologias": [
+                        "• Java",
+                        "• C#",
+                        "• Docker",
+                        "• Base de datos (Oracle - MySQL - Mongo)",
+                        "• Unity"
+                    ],
+                    "ano": "Mayo 2024 - Actualidad"
                 },
                 {
-                    "titulo": "🌐 Desarrollo de API REST y gRPC",
-                    "descripcion": "Desarrollo de microservicios para la GISS (Gerencia de Informática de la Seguridad Social).",
+                    "titulo": "👨‍🏫 Profesor sustituto de FP",
+                    "descripcion": "Profesor sustituto de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma. 🧑‍💻",
                     "tareas": [
-                        "🔹 Diseño y desarrollo de APIs RESTful para la comunicación entre servicios.",
-                        "🔹 Implementación de servicios gRPC para mejorar el rendimiento en la comunicación."
+                        "• Programación multimedia y dispositivos móviles (Unity y android): creación y desarrollo de videojuegos usando C# para la creación de scripts. Creación de aplicaciones móviles con Android Studio con Java y consumiendo SQL Lite.",
+                        "• Diseño de interfaces web (CSS avanzado, Flutter): creación de aplicaciones móviles con Flutter y dart consumiendo SQL.",
+                        "• Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
+                        "• Base de datos (MySQL)."
                     ],
                     "tecnologias": [
-                        "🔹 REST",
-                        "🔹 gRPC",
-                        "🔹 Java 21",
-                        "🔹 Spring Boot"
+                        "• Java",
+                        "• C#",
+                        "• Docker",
+                        "• Base de datos (Oracle - MySQL - Mongo)",
+                        "• Unity"
                     ],
-                    "ano": "Enero 2024 - Marzo 2025"
+                    "ano": "Octubre 2023 - Mayo 2024"
+                }
+            ]
+        },
+        {
+            "img": "images/deloitte_blanco.png",
+            "empresa": "DELOITTE",
+            "ano": " | Marzo 2023 - Junio 2023",
+            "titulo": "Desarrollador Frontend",
+            "proyectos": [
+                {
+                    "titulo": "🧑‍💻 Desarrollador Junior",
+                    "descripcion": "📱 Desarrollo de aplicaciones móviles con Flutter.",
+                    "tareas": [
+                        "🔹 Creación de aplicación interna para la asignación de sitios en la oficina con flutter consumiendo un backend dado."
+                    ],
+                    "tecnologias": [
+                        "🔹 Flutter",
+                        "🔹 Dart",
+                        "🔹 GitLab",
+                        "🔹 Figma"
+                    ],
+                    "ano": "Marzo 2023 - Junio 2023"
                 }
             ]
         }
