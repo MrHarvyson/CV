@@ -99,15 +99,96 @@
                     "titulo": "🧑‍💻 Desarrollador Junior",
                     "descripcion": "📱 Desarrollo de aplicaciones móviles con Flutter.",
                     "tareas": [
-                        "🔹 Creación de aplicación interna para la asignación de sitios en la oficina con flutter consumiendo un backend dado."
+                        "• Creación de aplicación interna para la asignación de sitios en la oficina con flutter consumiendo un backend dado."
                     ],
                     "tecnologias": [
-                        "🔹 Flutter",
-                        "🔹 Dart",
-                        "🔹 GitLab",
-                        "🔹 Figma"
+                        "• Flutter",
+                        "• Dart",
+                        "• GitLab",
+                        "• Figma"
                     ],
                     "ano": "Marzo 2023 - Junio 2023"
+                }
+            ]
+        },
+        {
+            "img": "images/boneBlanco.png",
+            "empresa": "BONE STUDIO",
+            "ano": " | Agosto 2016 - Septiembre 2018",
+            "titulo": "Computer Graphics",
+            "proyectos": [
+                {
+                    "titulo": "🧑‍💻 Computer Graphics Generalist",
+                    "descripcion": "🎥 Creación de aplicaciones de realidad virtual.",
+                    "tareas": [
+                        "• Creación de asset y entornos 3d.",
+                        "• Integración en Unreal."
+                    ],
+                    "tecnologias": [
+                        "• Blender",
+                        "• Unreal"
+                    ],
+                    "ano": "Septiembre 2017 - Septiembre 2018"
+                },
+                {
+                    "titulo": "🧑‍💻 Computer Graphics Generalist",
+                    "descripcion": "🎥 Video publicitario de productos comerciales para digitalSTROM.",
+                    "tareas": [
+                        "• Creación de asset y entornos 3d.",
+                        "• IAnimación de la escena."
+                    ],
+                    "tecnologias": [
+                        "• Blender"
+                    ],
+                    "ano": "Agosto 2016 - Septiembre 2017"
+                }
+            ]
+        },
+        {
+            "img": "images/penduloBlanco.png",
+            "empresa": "PENDULO STUDIO",
+            "ano": " | Junio 2017 - Julio 2018",
+            "titulo": "Computer Graphics",
+            "proyectos": [
+                {
+                    "titulo": "🧑‍💻 Modelador 3D",
+                    "descripcion": "🎮 Creación de asset para el videojuego Black Sad.",
+                    "tareas": [
+                        "• Modelados de asset (coches, assets de la calle, assets de las casas...)",
+                        "• Texturizado de los asset.",
+                        "• Integración de los asset en Unity."
+                    ],
+                    "tecnologias": [
+                        "• Blender",
+                        "• Unity",
+                        "• Photoshop"
+                    ],
+                    "ano": "Junio 2017 - Julio 2018"
+                }
+            ]
+        },
+        {
+            "img": "images/whiteBlanco.png",
+            "empresa": "WHITELINE STUDIO",
+            "ano": " | Octubre 2014 - Junio 2018",
+            "titulo": "Computer Graphics",
+            "proyectos": [
+                {
+                    "titulo": "🧑‍💻 Generalista 3D",
+                    "descripcion": "Modelador 3D, animador, texturizado y rig para anucnios de televisión y escenas de cine.",
+                    "tareas": [
+                        "• Modelados de asset, personajes y entornos.",
+                        "• Animación de los personajes y entornos.",
+                        "• Rig de los personajes.",
+                        "• Texturizado de los asset."
+                    ],
+                    "tecnologias": [
+                        "• Blender",
+                        "• Z-Brush",
+                        "• Maya",
+                        "• Photoshop"
+                    ],
+                    "ano": "Octubre 2014 - Junio 2018"
                 }
             ]
         }
