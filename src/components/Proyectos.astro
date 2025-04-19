@@ -15,11 +15,15 @@ interface Proyectos {
 }
 ---
 
-<div class="card flex justify-center items-start w-full gap-20">
-  <img class="blanco w-[150px] h-[150px]" src={experiencia.img} />
+<div class="card px-10 md:px-0 flex justify-center items-start w-full gap-20">
+  <img
+    class="blanco hidden md:block w-[150px] h-[150px]"
+    src={experiencia.img}
+  />
   <div class="flex flex-col">
     <p class="text-azul pb-5 font-medium text-4xl">
-      {experiencia.empresa}<span class="font-light text-base text-gray-400"
+      {experiencia.empresa}<span
+        class="hidden md:block font-light text-base text-gray-400"
         >{experiencia.ano}</span
       >
     </p>
