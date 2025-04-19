@@ -1,0 +1,17 @@
+---
+import Proyectos from "./Proyectos.astro";
+import experiencia from "../../public/mocks/experiencia.json";
+---
+
+<div class="h-24" id="idexperiencia"></div>
+<section class="pb-[200px] pt-10">
+  <a class="flex justify-center font-bold text-6xl text-azul">Experiencia</a>
+
+  <div class="cards flex flex-col pt-[175px] gap-[125px]">
+    {
+      experiencia.map((experiencia) => {
+        return <Proyectos experiencia={experiencia} />;
+      })
+    }
+  </div>
+</section>
