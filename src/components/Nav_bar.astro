@@ -6,24 +6,24 @@ import Icono_proyectos from "./icons/Icono_proyectos.astro";
 ---
 
 <nav>
-    <ul
-        class="flex h-20 items-center bg-fondo justify-evenly [&>li>a]:text-xs [&>li]:flex [&>li]:flex-col [&>li]:items-center [&>li]:gap-2"
+    <div
+        class="flex h-20 items-center bg-fondo justify-evenly [&>a>p]:text-xs [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:justify-center [&>a]:gap-2"
     >
-        <li>
+        <a href="#idhome">
             <Icono_inicio />
-            <a href="#idhome">Inicio</a>
-        </li>
-        <li>
+            <p>Inicio</p>
+        </a>
+        <a href="#idexperiencia">
             <Icono_experiencia />
-            <a href="#idexperiencia">Experiencia</a>
-        </li>
-        <li>
+            <p>Experiencia</p>
+        </a>
+        <a href="#idEducacion">
             <Icono_educacion />
-            <a href="#idEducacion">Educación</a>
-        </li>
-        <li>
+            <p>Educación</p>
+        </a>
+        <a class="cursor">
             <Icono_proyectos />
-            <a class="cursor">Proyectos</a>
-        </li>
-    </ul>
+            <p>Proyectos</p>
+        </a>
+    </div>
 </nav>
