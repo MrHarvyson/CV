@@ -1,21 +1,28 @@
 ---
-
+import Icono_inicio from "./icons/Icono_inicio.astro";
+import Icono_experiencia from "./icons/Icono_experiencia.astro";
+import Icono_educacion from "./icons/Icono_educacion.astro";
+import Icono_proyectos from "./icons/Icono_proyectos.astro";
 ---
 
 <nav>
     <ul
-        class="flex h-20 items-center bg-fondo justify-evenly [&>li>a]:text-base"
+        class="flex h-20 items-center bg-fondo justify-evenly [&>li>a]:text-xs [&>li]:flex [&>li]:flex-col [&>li]:items-center [&>li]:gap-2"
     >
         <li>
+            <Icono_inicio />
             <a href="#idhome">Inicio</a>
         </li>
         <li>
+            <Icono_experiencia />
             <a href="#idexperiencia">Experiencia</a>
         </li>
         <li>
+            <Icono_educacion />
             <a href="#idEducacion">Educación</a>
         </li>
         <li>
+            <Icono_proyectos />
             <a class="cursor">Proyectos</a>
         </li>
     </ul>
