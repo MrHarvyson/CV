@@ -21,12 +21,15 @@ interface Proyectos {
     src={experiencia.img}
   />
   <div class="flex flex-col">
-    <p class="text-azul pb-5 font-medium text-4xl">
-      {experiencia.empresa}<span
-        class="hidden md:block font-light text-base text-gray-400"
-        >{experiencia.ano}</span
-      >
-    </p>
+    <div class="flex items-baseline pb-4 gap-2">
+      <p class="text-azul font-medium text-4xl">
+        {experiencia.empresa}
+      </p>
+      <p class="hidden md:block font-light text-base text-gray-400">
+        {experiencia.ano}
+      </p>
+    </div>
+
     <p class="text-base text-gray-400">{experiencia.titulo}</p>
 
     <div>
