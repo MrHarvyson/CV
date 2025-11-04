@@ -1,0 +1,17 @@
+---
+import educacion from "../../../public/mocks/educacion.json";
+import Proyectos from "../Proyectos.astro";
+---
+
+<div class="h-24" id="idEducacion"></div>
+<section class="pb-[200px] pt-10">
+  <a class="flex justify-center font-bold text-6xl text-rojo">Educación</a>
+
+  <div class="cards flex flex-col pt-[175px] gap-[125px]">
+    {
+      educacion.map((educacion) => {
+        return <Proyectos experiencia={educacion} />;
+      })
+    }
+  </div>
+</section>
