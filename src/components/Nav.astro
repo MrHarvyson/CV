@@ -1,6 +1,7 @@
 ---
 import Icono_linkedin from "./icons/Icono_linkedin.astro";
 import Icono_github from "./icons/Icono_github.astro";
+import NavInteractive from "./NavInteractive.jsx";
 ---
 
 <header
@@ -71,29 +72,4 @@ import Icono_github from "./icons/Icono_github.astro";
   </div>
 </header>
 
-<script>
-  // Active Link Highlighting & Smooth Scroll
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-link");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop - 150) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("text-primary");
-      link.classList.add("text-gray-300");
-      const href = link.getAttribute("href");
-      if (href && href.includes(current)) {
-        link.classList.remove("text-gray-300");
-        link.classList.add("text-primary");
-      }
-    });
-  });
-</script>
+<NavInteractive client:load selector="header .nav-link" />

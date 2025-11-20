@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "checkJs": false
+    },
+    "include": [
+        "src/**/*",
+        "public/**/*",
+        ".astro/types.d.ts"
+    ]
+}

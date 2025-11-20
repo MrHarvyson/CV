@@ -3,27 +3,30 @@ import Icono_inicio from "./icons/Icono_inicio.astro";
 import Icono_experiencia from "./icons/Icono_experiencia.astro";
 import Icono_educacion from "./icons/Icono_educacion.astro";
 import Icono_proyectos from "./icons/Icono_proyectos.astro";
+import NavInteractive from "./NavInteractive.jsx";
 ---
 
 <nav>
     <div
-        class="flex h-20 items-center bg-fondo justify-evenly [&>a>p]:text-xs [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:justify-center [&>a]:gap-2"
+        class="mobile-nav flex h-20 items-center bg-fondo justify-evenly [&>a>p]:text-xs [&>a]:flex [&>a]:flex-col [&>a]:items-center [&>a]:justify-center [&>a]:gap-2"
     >
-        <a href="#idhome">
+        <a href="#idhome" class="nav-link">
             <Icono_inicio />
             <p>Inicio</p>
         </a>
-        <a href="#idexperiencia">
+        <a href="#idexperiencia" class="nav-link">
             <Icono_experiencia />
             <p>Experiencia</p>
         </a>
-        <a href="#idEducacion">
+        <a href="#idEducacion" class="nav-link">
             <Icono_educacion />
             <p>Educación</p>
         </a>
-        <a class="cursor">
+        <a href="#idproyectos" class="nav-link cursor">
             <Icono_proyectos />
             <p>Proyectos</p>
         </a>
     </div>
 </nav>
+
+<NavInteractive client:load selector=".mobile-nav .nav-link" />
