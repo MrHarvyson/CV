@@ -50,19 +50,35 @@ const { title } = Astro.props;
       scroll-behavior: smooth;
     }
 
+    /* Theme variables (kept in sync with tailwind.config.mjs) */
+    :root {
+      --color-fondo: #2c2d30; /* fondo */
+      --color-primary: #2dd4bf; /* primary / azul */
+      --color-dark-lighter: #1e293b; /* dark-lighter */
+      --color-gray-light: #94a3b8; /* gray-light */
+    }
+
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
       width: 10px;
     }
     ::-webkit-scrollbar-track {
-      background: #0f172a;
+      background: var(--color-fondo);
     }
     ::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 5px;
+      background: var(--color-primary);
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      background-clip: padding-box;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
+      filter: brightness(0.92);
+    }
+
+    /* Firefox scrollbar styling (modern) */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-primary) var(--color-fondo);
     }
 
     .cursor {
