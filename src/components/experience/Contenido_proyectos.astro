@@ -39,7 +39,7 @@ interface Proyectos {
                 <!-- Título con efecto de gradiente al hover y subrayado animado -->
                 <div class="relative">
                     <h4
-                        class="text-[clamp(1.125rem,2.2vw,1.875rem)] font-heading font-extrabold text-white leading-snug tracking-tight transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-white max-w-[40ch] break-words"
+                        class="text-[clamp(1.125rem,2.2vw,1.875rem)] font-heading font-extrabold text-white leading-snug tracking-tight transition-colors duration-300 group-hover:text-primary max-w-[40ch] break-words"
                         style="hyphens: auto;"
                     >
                         {proyectos.titulo}
@@ -60,7 +60,7 @@ interface Proyectos {
         <div class="space-y-6">
             <!-- Tareas -->
             <div>
-                <div class="flex items-center gap-2 mb-3 text-secondary">
+                <div class="flex items-center gap-2 mb-3 text-secondary group">
                     <Icono_lista />
                     <span
                         class="text-sm text-white font-semibold uppercase tracking-wider"
@@ -81,7 +81,7 @@ interface Proyectos {
 
             <!-- Tecnologías -->
             <div>
-                <div class="flex items-center gap-2 mb-3 text-primary">
+                <div class="flex items-center gap-2 mb-3 text-primary group">
                     <Icono_herramienta />
                     <span
                         class="text-sm text-white font-semibold uppercase tracking-wider"
