@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="JM monograma unido">
+  <title>JM monograma unido (fondo transparente)</title>
+  <!-- Fondo intencionalmente transparente: no hay rect ni forma de fondo -->
+  <!-- Monograma donde la J y la M comparten el mismo palo vertical -->
+  <g stroke="#0ea5a4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Palo compartido -->
+    <line x1="32" y1="14" x2="32" y2="46" />
+    <!-- Letra M que usa el palo como su primer trazo -->
+    <path d="M32 14 L40 34 L48 14 L48 46" />
+    <!-- Gancho de la J, partiendo desde la base del palo hacia la izquierda -->
+    <path d="M32 46 Q28 54 20 50" />
+  </g>
+</svg>
