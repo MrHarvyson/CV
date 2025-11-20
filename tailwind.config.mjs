@@ -7,12 +7,12 @@ export default {
 				// Modern Dark Premium Palette
 				primary: '#2dd4bf', // Teal-400
 				secondary: '#fbdd62', // Yellow (antes Purple-500)
-				dark: '#0f172a', // Slate-900
+				dark: '#2c2d30', // Slate-900
 				'dark-lighter': '#1e293b', // Slate-800
 				'gray-light': '#94a3b8', // Slate-400
 				// Keeping legacy names for compatibility during refactor, mapped to new palette
 				'azul': '#2dd4bf',
-				'fondo': '#0f172a',
+				'fondo': '#2c2d30',
 				'amarillo': '#fbdd62',
 				'rojo': '#ff5380',
 			},
