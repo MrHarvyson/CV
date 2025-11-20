@@ -82,3 +82,5 @@ Recomendación: configurar variables de entorno si vas a añadir integraciones (
 
 ---
 Generado automáticamente: contiene instrucciones básicas para desarrollo, build y despliegue. Personaliza las secciones de contacto y licencia según prefieras.
+
+
