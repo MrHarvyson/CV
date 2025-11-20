@@ -2,6 +2,7 @@
 const { proyectos } = Astro.props;
 import Icono_lista from "./icons/Icono_lista.astro";
 import Icono_herramienta from "./icons/Icono_herramienta.astro";
+import TechBadge from "./TechBadge.astro";
 interface Proyectos {
     img: string;
     empresa: string;
@@ -80,9 +81,7 @@ interface Proyectos {
                 <div class="flex flex-wrap gap-2">
                     {
                         proyectos.tecnologias.map((tecnologia: string) => (
-                            <span class="text-xs font-medium text-primary bg-primary/10 border border-primary/20 px-3 py-1 rounded-full hover:bg-primary/20 transition-colors cursor-default">
-                                {tecnologia}
-                            </span>
+                            <TechBadge name={tecnologia} />
                         ))
                     }
                 </div>

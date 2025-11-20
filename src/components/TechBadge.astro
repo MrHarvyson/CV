@@ -1,0 +1,91 @@
+---
+interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+
+// Normalize name for lookup (lowercase, trim)
+const key = name.toLowerCase().trim();
+
+// Default fallback
+const DEFAULT_COLOR = "#64748b"; // slate-500
+
+// Icon Colors
+const COLORS = {
+    java: "#ED8B00",
+    spring: "#6DB33F",
+    docker: "#2496ED",
+    kafka: "#ffffff",
+    oracle: "#F80000",
+    mongo: "#47A248",
+    unity: "#ffffff",
+    "c#": "#239120",
+    figma: "#F24E1E",
+    astro: "#FF5D01",
+    tailwind: "#06B6D4",
+    react: "#61DAFB",
+    flutter: "#02569B",
+    dart: "#0175C2",
+    gitlab: "#FC6D26",
+    blender: "#E87D0D",
+    unreal: "#ffffff",
+    photoshop: "#31A8FF",
+    mysql: "#4479A1",
+    html: "#E34F26",
+    css: "#1572B6",
+    yeoman: "#E0B32F",
+    infinispan: "#000000",
+    prometheus: "#E6522C",
+    grafana: "#F46800",
+    akhq: "#1C1C1C",
+    zbrush: "#000000",
+    maya: "#37A5CC",
+};
+
+// Helper to find color
+function getColor(techName: string) {
+    const lower = techName.toLowerCase();
+
+    if (lower.includes("java") && !lower.includes("script")) return COLORS.java;
+    if (lower.includes("spring")) return COLORS.spring;
+    if (lower.includes("docker")) return COLORS.docker;
+    if (lower.includes("kafka")) return COLORS.kafka;
+    if (lower.includes("oracle")) return COLORS.oracle;
+    if (lower.includes("mongo")) return COLORS.mongo;
+    if (lower.includes("unity")) return COLORS.unity;
+    if (lower.includes("c#")) return COLORS["c#"];
+    if (lower.includes("figma")) return COLORS.figma;
+    if (lower.includes("astro")) return COLORS.astro;
+    if (lower.includes("tailwind")) return COLORS.tailwind;
+    if (lower.includes("react")) return COLORS.react;
+    if (lower.includes("flutter")) return COLORS.flutter;
+    if (lower.includes("dart")) return COLORS.dart;
+    if (lower.includes("gitlab")) return COLORS.gitlab;
+    if (lower.includes("blender")) return COLORS.blender;
+    if (lower.includes("unreal")) return COLORS.unreal;
+    if (lower.includes("photoshop")) return COLORS.photoshop;
+    if (lower.includes("mysql")) return COLORS.mysql;
+    if (lower.includes("html")) return COLORS.html;
+    if (lower.includes("css")) return COLORS.css;
+    if (lower.includes("yeoman")) return COLORS.yeoman;
+    if (lower.includes("infinispan")) return COLORS.infinispan;
+    if (lower.includes("prometheus")) return COLORS.prometheus;
+    if (lower.includes("grafana")) return COLORS.grafana;
+    if (lower.includes("akhq")) return COLORS.akhq;
+    if (lower.includes("z-brush") || lower.includes("zbrush"))
+        return COLORS.zbrush;
+    if (lower.includes("maya")) return COLORS.maya;
+
+    return DEFAULT_COLOR;
+}
+
+const color = getColor(name);
+---
+
+<span
+    class="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border transition-all duration-300 hover:scale-105"
+    style={`background-color: ${color}15; color: ${color}; border-color: ${color}30;`}
+>
+    {name}
+</span>
