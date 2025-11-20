@@ -6,40 +6,42 @@
             "titulo": "Software Developer Microservice Java",
             "proyectos": [
                 {
-                    "titulo": "🧑‍💻 Desarrollador de microservicios",
+                    "titulo": "Desarrollador de microservicios",
                     "descripcion": "Durante mi colaboración con la Gerencia de Informática de la Seguridad Social (GISS), participé activamente en el desarrollo de soluciones orientadas a arquitecturas de microservicios.",
                     "tareas": [
-                        "• Desarrollo de microservicios utilizando Spring Boot con Java 21, dentro de una arquitectura distribuida.",
-                        "• Implementación de interfaces de comunicación entre servicios mediante REST y gRPC.",
-                        "• Diseño y desarrollo de una herramienta personalizada con Yeoman (JavaScript) para la generación automatizada de proyectos, siguiendo un esquema común."
+                        "Desarrollo de microservicios utilizando Spring Boot con Java 21, dentro de una arquitectura distribuida.",
+                        "Implementación de interfaces de comunicación entre servicios mediante REST y gRPC.",
+                        "Diseño y desarrollo de una herramienta personalizada con Yeoman (JavaScript) para la generación automatizada de proyectos, siguiendo un esquema común."
                     ],
                     "tecnologias": [
-                        "• Java 21",
-                        "• Spring Boot",
-                        "• Apache Kafka",
-                        "• REST - gRPC",
-                        "• Base de datos (Oracle - Infinispan - Mongo)",
-                        "• Docker",
-                        "• Yeoman"
+                        "Java 21",
+                        "Spring Boot",
+                        "Apache Kafka",
+                        "REST - gRPC",
+                        "Oracle",
+                        "Infinispan",
+                        "Mongo",
+                        "Docker",
+                        "Yeoman"
                     ],
                     "ano": "Enero 2024 - Marzo 2025"
                 },
                 {
-                    "titulo": "🧑‍💻 Desarrollador Junior",
+                    "titulo": "Desarrollador Junior",
                     "descripcion": "Durante este proyecto, mi objetivo principal fue la homogeneización de herramientas para los equipos de desarrollo, asegurando entornos coherentes y reproducibles mediante el uso de contenedores. Este enfoque permitió estandarizar las configuraciones, reducir errores en la integración y mejorar la eficiencia de los procesos de desarrollo y pruebas en distintos entornos.",
                     "tareas": [
-                        "• Diseño y creación de contenedores Docker personalizados, orientados a garantizar la homogeneidad en el uso de herramientas por parte de los distintos equipos de desarrollo.",
-                        "• Implementación de contenedores para distintas bases de datos, como Oracle, Infinispan y MongoDB, facilitando la replicación de entornos de prueba y desarrollo.",
-                        "• Creación de contenedores para herramientas de infraestructura crítica como: Kafka y Kafka Connect, para sistemas de mensajería basados en eventos; Akhq, como panel de administración para clústeres Kafka; Grafana y Prometheus, como soluciones de monitoreo, visualización y métricas del sistema."
+                        "Diseño y creación de contenedores Docker personalizados, orientados a garantizar la homogeneidad en el uso de herramientas por parte de los distintos equipos de desarrollo.",
+                        "Implementación de contenedores para distintas bases de datos, como Oracle, Infinispan y MongoDB, facilitando la replicación de entornos de prueba y desarrollo.",
+                        "Creación de contenedores para herramientas de infraestructura crítica como: Kafka y Kafka Connect, para sistemas de mensajería basados en eventos; Akhq, como panel de administración para clústeres Kafka; Grafana y Prometheus, como soluciones de monitoreo, visualización y métricas del sistema."
                     ],
                     "tecnologias": [
-                        "• Docker",
-                        "• Kafka",
-                        "• Akhq",
-                        "• Grafana",
-                        "• Prometheus",
-                        "• Oracle",
-                        "• MongoDB"
+                        "Docker",
+                        "Kafka",
+                        "Akhq",
+                        "Grafana",
+                        "Prometheus",
+                        "Oracle",
+                        "MongoDB"
                     ],
                     "ano": "Noviembre 2023 - Enero 2024"
                 }
@@ -52,38 +54,40 @@
             "titulo": "Profesor de formación profesional",
             "proyectos": [
                 {
-                    "titulo": "👨‍🏫 Profesor y Tutor de FP",
-                    "descripcion": "Profesor de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma siendo tutor de este. 🧑‍💻",
+                    "titulo": "Profesor y Tutor de FP",
+                    "descripcion": "Profesor de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma siendo tutor de este.",
                     "tareas": [
-                        "• Programación multimedia y dispositivos móviles (Unity): creación y desarrollo de videojuegos consumiendo microservicios para el login y guardado de datos. Lenguaje usado C# para la creación de scripts y Java 21 para al creación de microservicios con Spring Boot. Microservicios desplegados en Azure y base de datos usada Mongo Atlas.",
-                        "• Diseño de interfaces web (CSS avanzado, Figma, Astro, Tailwind, React Native, Expo Go): creación de diseños web y de aplicaciones con Figma. Creación de páginas web estáticas con Astro usando Tailwind para darle estilo, página desplegada en Github Action. Creación de aplicaciones móviles con React Native Expo Go consumiendo microservios creados con Spring Boot.",
-                        "• Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
-                        "• Apoyo Base de datos (MySQL, MongoDB)"
+                        "Programación multimedia y dispositivos móviles (Unity): creación y desarrollo de videojuegos consumiendo microservicios para el login y guardado de datos. Lenguaje usado C# para la creación de scripts y Java 21 para al creación de microservicios con Spring Boot. Microservicios desplegados en Azure y base de datos usada Mongo Atlas.",
+                        "Diseño de interfaces web (CSS avanzado, Figma, Astro, Tailwind, React Native, Expo Go): creación de diseños web y de aplicaciones con Figma. Creación de páginas web estáticas con Astro usando Tailwind para darle estilo, página desplegada en Github Action. Creación de aplicaciones móviles con React Native Expo Go consumiendo microservios creados con Spring Boot.",
+                        "Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
+                        "Apoyo Base de datos (MySQL, MongoDB)"
                     ],
                     "tecnologias": [
-                        "• Java",
-                        "• C#",
-                        "• Docker",
-                        "• Base de datos (Oracle - MySQL - Mongo)",
-                        "• Unity"
+                        "Java",
+                        "C#",
+                        "Docker",
+                        "Base de datos (Oracle - MySQL - Mongo)",
+                        "Unity"
                     ],
                     "ano": "Mayo 2024 - Actualidad"
                 },
                 {
-                    "titulo": "👨‍🏫 Profesor sustituto de FP",
-                    "descripcion": "Profesor sustituto de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma. 🧑‍💻",
+                    "titulo": "Profesor sustituto de FP",
+                    "descripcion": "Profesor sustituto de Ciclo Formativo de Grado Superior (CFGS) en el primer y segundo curso de Desarrollo de Aplicaciones Web (DAW) y Desarrollo de Aplicaciones Multiplataforma.",
                     "tareas": [
-                        "• Programación multimedia y dispositivos móviles (Unity y android): creación y desarrollo de videojuegos usando C# para la creación de scripts. Creación de aplicaciones móviles con Android Studio con Java y consumiendo SQL Lite.",
-                        "• Diseño de interfaces web (CSS avanzado, Flutter): creación de aplicaciones móviles con Flutter y dart consumiendo SQL.",
-                        "• Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
-                        "• Base de datos (MySQL)."
+                        "Programación multimedia y dispositivos móviles (Unity y android): creación y desarrollo de videojuegos usando C# para la creación de scripts. Creación de aplicaciones móviles con Android Studio con Java y consumiendo SQL Lite.",
+                        "Diseño de interfaces web (CSS avanzado, Flutter): creación de aplicaciones móviles con Flutter y dart consumiendo SQL.",
+                        "Lenguaje de marcas: conocimiento básicos de HTML y CSS para la creación de web.",
+                        "Base de datos (MySQL)."
                     ],
                     "tecnologias": [
-                        "• Java",
-                        "• C#",
-                        "• Docker",
-                        "• Base de datos (Oracle - MySQL - Mongo)",
-                        "• Unity"
+                        "Java",
+                        "C#",
+                        "Docker",
+                        "Oracle",
+                        "Infinispan",
+                        "Mongo",
+                        "Unity"
                     ],
                     "ano": "Octubre 2023 - Mayo 2024"
                 }
@@ -96,16 +100,16 @@
             "titulo": "Desarrollador Frontend",
             "proyectos": [
                 {
-                    "titulo": "🧑‍💻 Desarrollador Junior",
-                    "descripcion": "📱 Desarrollo de aplicaciones móviles con Flutter.",
+                    "titulo": "Desarrollador Junior",
+                    "descripcion": "Desarrollo de aplicaciones móviles con Flutter.",
                     "tareas": [
-                        "• Creación de aplicación interna para la asignación de sitios en la oficina con flutter consumiendo un backend dado."
+                        "Creación de aplicación interna para la asignación de sitios en la oficina con flutter consumiendo un backend dado."
                     ],
                     "tecnologias": [
-                        "• Flutter",
-                        "• Dart",
-                        "• GitLab",
-                        "• Figma"
+                        "Flutter",
+                        "Dart",
+                        "GitLab",
+                        "Figma"
                     ],
                     "ano": "Marzo 2023 - Junio 2023"
                 }
@@ -118,27 +122,27 @@
             "titulo": "Computer Graphics",
             "proyectos": [
                 {
-                    "titulo": "🧑‍💻 Computer Graphics Generalist",
-                    "descripcion": "🎥 Creación de aplicaciones de realidad virtual.",
+                    "titulo": "Computer Graphics Generalist",
+                    "descripcion": "Creación de aplicaciones de realidad virtual.",
                     "tareas": [
-                        "• Creación de asset y entornos 3d.",
-                        "• Integración en Unreal."
+                        "Creación de asset y entornos 3d.",
+                        "Integración en Unreal."
                     ],
                     "tecnologias": [
-                        "• Blender",
-                        "• Unreal"
+                        "Blender",
+                        "Unreal"
                     ],
                     "ano": "Septiembre 2017 - Septiembre 2018"
                 },
                 {
-                    "titulo": "🧑‍💻 Computer Graphics Generalist",
-                    "descripcion": "🎥 Video publicitario de productos comerciales para digitalSTROM.",
+                    "titulo": "Computer Graphics Generalist",
+                    "descripcion": "Video publicitario de productos comerciales para digitalSTROM.",
                     "tareas": [
-                        "• Creación de asset y entornos 3d.",
-                        "• IAnimación de la escena."
+                        "Creación de asset y entornos 3d.",
+                        "IAnimación de la escena."
                     ],
                     "tecnologias": [
-                        "• Blender"
+                        "Blender"
                     ],
                     "ano": "Agosto 2016 - Septiembre 2017"
                 }
@@ -151,17 +155,17 @@
             "titulo": "Computer Graphics",
             "proyectos": [
                 {
-                    "titulo": "🧑‍💻 Modelador 3D",
-                    "descripcion": "🎮 Creación de asset para el videojuego Black Sad.",
+                    "titulo": "Modelador 3D",
+                    "descripcion": "Creación de asset para el videojuego Black Sad.",
                     "tareas": [
-                        "• Modelados de asset (coches, assets de la calle, assets de las casas...)",
-                        "• Texturizado de los asset.",
-                        "• Integración de los asset en Unity."
+                        "Modelados de asset (coches, assets de la calle, assets de las casas...)",
+                        "Texturizado de los asset.",
+                        "Integración de los asset en Unity."
                     ],
                     "tecnologias": [
-                        "• Blender",
-                        "• Unity",
-                        "• Photoshop"
+                        "Blender",
+                        "Unity",
+                        "Photoshop"
                     ],
                     "ano": "Junio 2017 - Julio 2018"
                 }
@@ -174,19 +178,19 @@
             "titulo": "Computer Graphics",
             "proyectos": [
                 {
-                    "titulo": "🧑‍💻 Generalista 3D",
+                    "titulo": "Generalista 3D",
                     "descripcion": "Modelador 3D, animador, texturizado y rig para anucnios de televisión y escenas de cine.",
                     "tareas": [
-                        "• Modelados de asset, personajes y entornos.",
-                        "• Animación de los personajes y entornos.",
-                        "• Rig de los personajes.",
-                        "• Texturizado de los asset."
+                        "Modelados de asset, personajes y entornos.",
+                        "Animación de los personajes y entornos.",
+                        "Rig de los personajes.",
+                        "Texturizado de los asset."
                     ],
                     "tecnologias": [
-                        "• Blender",
-                        "• Z-Brush",
-                        "• Maya",
-                        "• Photoshop"
+                        "Blender",
+                        "Z-Brush",
+                        "Maya",
+                        "Photoshop"
                     ],
                     "ano": "Octubre 2014 - Junio 2018"
                 }

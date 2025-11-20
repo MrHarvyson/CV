@@ -4,14 +4,18 @@ import experiencia from "../../public/mocks/experiencia.json";
 ---
 
 <div class="h-24" id="idexperiencia"></div>
-<section class="pb-[200px] pt-10">
-  <a class="flex justify-center font-bold text-6xl text-azul">Experiencia</a>
+<section class="pb-32 pt-10 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-5xl md:text-6xl font-heading font-bold mb-20">
+      <span class="bg-clip-text text-primar"> Experiencia </span>
+    </h2>
 
-  <div class="cards flex flex-col pt-[75px] md:pt-[175px] gap-[125px]">
-    {
-      experiencia.map((experiencia) => {
-        return <Proyectos experiencia={experiencia} />;
-      })
-    }
+    <div class="flex flex-col gap-24">
+      {
+        experiencia.map((experiencia) => {
+          return <Proyectos experiencia={experiencia} />;
+        })
+      }
+    </div>
   </div>
 </section>

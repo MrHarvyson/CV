@@ -4,18 +4,42 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'azul': '#0bceaf',
-				'fondo': '#2c2d30',
+				// Modern Dark Premium Palette
+				primary: '#2dd4bf', // Teal-400
+				secondary: '#fbdd62', // Yellow (antes Purple-500)
+				dark: '#0f172a', // Slate-900
+				'dark-lighter': '#1e293b', // Slate-800
+				'gray-light': '#94a3b8', // Slate-400
+				// Keeping legacy names for compatibility during refactor, mapped to new palette
+				'azul': '#2dd4bf',
+				'fondo': '#0f172a',
 				'amarillo': '#fbdd62',
 				'rojo': '#ff5380',
-				'texto_simple': 'rgba(255, 255, 255, 0.6)'
 			},
-		},
-		screens: {
-			'sm': '640px', // Cambia el valor a '640px'
-			'md': '768px',
-			'lg': '1024px',
-			'xl': '1280px',
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
+			},
+			animation: {
+				'fade-in': 'fadeIn 0.5s ease-out forwards',
+				'slide-up': 'slideUp 0.5s ease-out forwards',
+				'timeline-light': 'timelineLight 3s ease-in-out infinite',
+			},
+			keyframes: {
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				slideUp: {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				timelineLight: {
+					'0%': { transform: 'translateY(-100%)', opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { transform: 'translateY(100vh)', opacity: '0' },
+				},
+			},
 		},
 	},
 	plugins: [],

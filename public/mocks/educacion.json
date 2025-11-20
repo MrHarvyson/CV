@@ -1,48 +1,14 @@
     [
         {
-            "img": "images/viewnextBlanco.png",
-            "empresa": "VIEWNEXT",
-            "ano": " | Noviembre 2023 - Marzo 2025",
-            "titulo": "Software Developer Microservice Java",
-            "proyectos": [
-                {
-                    "titulo": "🧑‍💻 Desarrollador de microservicios",
-                    "descripcion": "Durante mi colaboración con la Gerencia de Informática de la Seguridad Social (GISS), participé activamente en el desarrollo de soluciones orientadas a arquitecturas de microservicios.",
-                    "tareas": [
-                        "• Desarrollo de microservicios utilizando Spring Boot con Java 21, dentro de una arquitectura distribuida.",
-                        "• Implementación de interfaces de comunicación entre servicios mediante REST y gRPC.",
-                        "• Diseño y desarrollo de una herramienta personalizada con Yeoman (JavaScript) para la generación automatizada de proyectos, siguiendo un esquema común."
-                    ],
-                    "tecnologias": [
-                        "• Java 21",
-                        "• Spring Boot",
-                        "• Apache Kafka",
-                        "• REST - gRPC",
-                        "• Base de datos (Oracle - Infinispan - Mongo)",
-                        "• Docker",
-                        "• Yeoman"
-                    ],
-                    "ano": "Enero 2024 - Marzo 2025"
-                },
-                {
-                    "titulo": "🧑‍💻 Desarrollador Junior",
-                    "descripcion": "Durante este proyecto, mi objetivo principal fue la homogeneización de herramientas para los equipos de desarrollo, asegurando entornos coherentes y reproducibles mediante el uso de contenedores. Este enfoque permitió estandarizar las configuraciones, reducir errores en la integración y mejorar la eficiencia de los procesos de desarrollo y pruebas en distintos entornos.",
-                    "tareas": [
-                        "• Diseño y creación de contenedores Docker personalizados, orientados a garantizar la homogeneidad en el uso de herramientas por parte de los distintos equipos de desarrollo.",
-                        "• Implementación de contenedores para distintas bases de datos, como Oracle, Infinispan y MongoDB, facilitando la replicación de entornos de prueba y desarrollo.",
-                        "• Creación de contenedores para herramientas de infraestructura crítica como: Kafka y Kafka Connect, para sistemas de mensajería basados en eventos; Akhq, como panel de administración para clústeres Kafka; Grafana y Prometheus, como soluciones de monitoreo, visualización y métricas del sistema."
-                    ],
-                    "tecnologias": [
-                        "• Docker",
-                        "• Kafka",
-                        "• Akhq",
-                        "• Grafana",
-                        "• Prometheus",
-                        "• Oracle",
-                        "• MongoDB"
-                    ],
-                    "ano": "Noviembre 2023 - Enero 2024"
-                }
-            ]
+            "img": "images/vedrunaBlanco.png",
+            "empresa": "UNIVERSITAT OBERTA DE CATALUNYA",
+            "ano": " | Septiembre 2023 - Actualmente",
+            "titulo": "Grado en Data Science"
+        },
+        {
+            "img": "images/vedrunaBlanco.png",
+            "empresa": "SANTA JOAQUINA DE VEDRUNA",
+            "ano": " | Septiembre 2021 - Marzo 2023",
+            "titulo": "Desarrollo de Aplicaciones Multiplataforma"
         }
     ]

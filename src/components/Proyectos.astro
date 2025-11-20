@@ -1,45 +1,65 @@
 ---
 import Contenido_proyectos from "./Contenido_proyectos.astro";
-const { experiencia } = Astro.props;
+
+interface Proyecto {
+  titulo: string;
+  descripcion: string;
+  tareas: string[];
+  tectnologias: string[];
+}
 
 interface Proyectos {
   img: string;
   empresa: string;
   ano: string;
-  proyectos: {
-    titulo: string;
-    descripcion: string;
-    tareas: string[];
-    tectnologias: string[];
-  }[];
+  titulo: string;
+  proyectos: Proyecto[];
 }
+
+const { experiencia } = Astro.props as { experiencia: Proyectos };
 ---
 
-<div class="card px-10 md:px-0 flex justify-center items-start w-full gap-20">
-  <img
-    class="blanco hidden lg:block w-[150px] h-[150px]"
-    src={experiencia.img}
-  />
-  <div class="flex flex-col">
-    <div class="flex items-baseline pb-4 gap-2">
-      <p class="text-azul font-medium text-4xl">
-        {experiencia.empresa}
-      </p>
-      <p class="hidden md:block font-light text-base text-gray-400">
-        {experiencia.ano}
-      </p>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16">
+  <!-- Company Info / Logo -->
+  <div
+    class="md:w-1/3 flex flex-col items-center md:items-end text-center md:text-right"
+  >
+    <div
+      class="w-32 h-32 bg-white/5 rounded-2xl p-4 backdrop-blur-sm border border-white/10 mb-6 shadow-xl flex items-center justify-center"
+    >
+      <img
+        class="w-full h-full object-contain filter brightness-0 invert opacity-80"
+        src={experiencia.img}
+        alt={experiencia.empresa}
+      />
+    </div>
+    <h3 class="text-3xl font-heading font-bold text-white mb-2">
+      {experiencia.empresa}
+    </h3>
+    <p class="text-primary font-medium text-lg mb-1">{experiencia.titulo}</p>
+    <p class="text-gray-400 font-light">{experiencia.ano}</p>
+  </div>
+
+  <!-- Projects Timeline -->
+  <div class="md:w-2/3 relative pl-8 md:pl-12 py-2">
+    <!-- Timeline Line -->
+    <div
+      class="absolute left-0 top-8 bottom-0 w-px bg-gradient-to-b from-white/10 via-white/5 to-transparent overflow-visible"
+    >
+      <!-- Animated Light -->
+      <div
+        class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-transparent via-primary/40 to-transparent animate-timeline-light"
+        style="filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.9)) drop-shadow(0 0 16px rgba(45, 212, 191, 0.6)) drop-shadow(0 0 24px rgba(45, 212, 191, 0.3));"
+      >
+      </div>
     </div>
 
-    <p class="text-base text-gray-400">{experiencia.titulo}</p>
-
-    <div>
-      <div class="relative">
-        {
-          experiencia.proyectos.map((proyectos: Proyectos) => {
-            return <Contenido_proyectos proyectos={proyectos} />;
-          })
-        }
-      </div>
+    <div class="flex flex-col gap-12">
+      {
+        experiencia.proyectos?.map((proyecto: Proyecto) => (
+          <Contenido_proyectos proyectos={proyecto} />
+        ))
+      }
     </div>
   </div>
 </div>

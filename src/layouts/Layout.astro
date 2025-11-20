@@ -15,8 +15,10 @@ const { title } = Astro.props;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,55 +30,43 @@ const { title } = Astro.props;
     ></script>
     <title>{title}</title>
   </head>
-  <body>
-    <div class="fixed z-40 top-0 w-full">
+  <body
+    class="bg-dark text-white font-sans antialiased selection:bg-primary selection:text-dark overflow-x-hidden"
+  >
+    <div class="fixed z-50 top-0 w-full">
       <Nav />
     </div>
-    <slot />
+    <main class="relative z-10">
+      <slot />
+    </main>
 
-    <div class="fixed z-40 bottom-0 w-full md:hidden">
+    <div class="fixed z-50 bottom-0 w-full md:hidden">
       <Nav_bar />
     </div>
   </body>
 
   <style is:global>
-    :root {
-      --color-fondo: #2c2d30;
-      --color-barra-oscuro: #2c2d30;
-      --color-barra-claro: #343539c0;
-      --color-azul: #0bceaf;
-      --color-azul-75: #0bceae86;
-      --color-blancoRoto: #ffffff83;
-      --color-rojo: #ff5380;
-      --color-amarillo: #fbdd62;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-
-      font-family: "Poppins", sans-serif;
-      color: #ffffff;
-      font-weight: 300;
-      cursor: url(../../public/images/cursorA.png), auto;
-    }
-
     html {
-      background-color: var(--color-fondo);
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
     }
 
     .cursor {
       cursor: url(../../public/images/cursorB.png), auto;
-    }
-
-    .opacity {
-      opacity: 25%;
-      transition: 300ms;
-      -webkit-transition: 300ms;
-      -moz-transition: 300ms;
-      -ms-transition: 300ms;
-      -o-transition: 300ms;
     }
   </style>
 </html>
