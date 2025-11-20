@@ -5,87 +5,91 @@ interface Props {
 
 const { name } = Astro.props;
 
-// Normalize name for lookup (lowercase, trim)
-const key = name.toLowerCase().trim();
+// Mapeo de nombres a logos de shields.io (colores desaturados)
+// Formato: https://img.shields.io/badge/{label}-{color}?style=flat&logo={logo}&logoColor=white
+const TECH_BADGES: Record<string, string> = {
+    // Backend
+    java: "Java-8B7355?style=flat&logo=openjdk&logoColor=white",
+    spring: "Spring-5A7A4F?style=flat&logo=spring&logoColor=white",
+    "spring boot":
+        "Spring_Boot-5A7A4F?style=flat&logo=spring-boot&logoColor=white",
 
-// Default fallback
-const DEFAULT_COLOR = "#64748b"; // slate-500
+    // Databases
+    oracle: "Oracle-A65555?style=flat&logo=oracle&logoColor=white",
+    mysql: "MySQL-5A6B7A?style=flat&logo=mysql&logoColor=white",
+    mongodb: "MongoDB-5A7A5F?style=flat&logo=mongodb&logoColor=white",
+    mongo: "MongoDB-5A7A5F?style=flat&logo=mongodb&logoColor=white",
 
-// Icon Colors
-const COLORS = {
-    java: "#ED8B00",
-    spring: "#6DB33F",
-    docker: "#2496ED",
-    kafka: "#ffffff",
-    oracle: "#F80000",
-    mongo: "#47A248",
-    unity: "#ffffff",
-    "c#": "#239120",
-    figma: "#F24E1E",
-    astro: "#FF5D01",
-    tailwind: "#06B6D4",
-    react: "#61DAFB",
-    flutter: "#02569B",
-    dart: "#0175C2",
-    gitlab: "#FC6D26",
-    blender: "#E87D0D",
-    unreal: "#ffffff",
-    photoshop: "#31A8FF",
-    mysql: "#4479A1",
-    html: "#E34F26",
-    css: "#1572B6",
-    yeoman: "#E0B32F",
-    infinispan: "#000000",
-    prometheus: "#E6522C",
-    grafana: "#F46800",
-    akhq: "#1C1C1C",
-    zbrush: "#000000",
-    maya: "#37A5CC",
+    // DevOps & Tools
+    docker: "Docker-5A7A8B?style=flat&logo=docker&logoColor=white",
+    kafka: "Apache_Kafka-4A4A4A?style=flat&logo=apache-kafka&logoColor=white",
+    gitlab: "GitLab-A67A5A?style=flat&logo=gitlab&logoColor=white",
+    prometheus: "Prometheus-A66A5A?style=flat&logo=prometheus&logoColor=white",
+    grafana: "Grafana-A67555?style=flat&logo=grafana&logoColor=white",
+
+    // Frontend
+    react: "React-6A8A95?style=flat&logo=react&logoColor=white",
+    astro: "Astro-A67055?style=flat&logo=astro&logoColor=white",
+    tailwind:
+        "Tailwind_CSS-5A7A7F?style=flat&logo=tailwind-css&logoColor=white",
+    tailwindcss:
+        "Tailwind_CSS-5A7A7F?style=flat&logo=tailwind-css&logoColor=white",
+    html: "HTML5-A66A55?style=flat&logo=html5&logoColor=white",
+    css: "CSS3-5A6B7A?style=flat&logo=css3&logoColor=white",
+
+    // Mobile
+    flutter: "Flutter-5A6B7F?style=flat&logo=flutter&logoColor=white",
+    dart: "Dart-5A6B7A?style=flat&logo=dart&logoColor=white",
+
+    // Game Dev & 3D
+    unity: "Unity-4A4A4A?style=flat&logo=unity&logoColor=white",
+    unreal: "Unreal_Engine-3A3A3A?style=flat&logo=unreal-engine&logoColor=white",
+    blender: "Blender-A67555?style=flat&logo=blender&logoColor=white",
+    zbrush: "ZBrush-4A4A4A?style=flat",
+    "z-brush": "ZBrush-4A4A4A?style=flat",
+    maya: "Autodesk_Maya-6A7A8A?style=flat",
+
+    // Design
+    figma: "Figma-A66A5F?style=flat&logo=figma&logoColor=white",
+    photoshop:
+        "Adobe_Photoshop-6A7A8A?style=flat&logo=adobe-photoshop&logoColor=white",
+
+    // Languages
+    "c#": "C%23-5A7A5A?style=flat&logo=c-sharp&logoColor=white",
+
+    // Other
+    yeoman: "Yeoman-9A8A6A?style=flat",
+    infinispan: "Infinispan-4A4A4A?style=flat",
+    akhq: "AKHQ-4A4A4A?style=flat",
 };
 
-// Helper to find color
-function getColor(techName: string) {
-    const lower = techName.toLowerCase();
+// Función para obtener la URL del badge
+function getBadgeUrl(techName: string): string {
+    const lower = techName.toLowerCase().trim();
 
-    if (lower.includes("java") && !lower.includes("script")) return COLORS.java;
-    if (lower.includes("spring")) return COLORS.spring;
-    if (lower.includes("docker")) return COLORS.docker;
-    if (lower.includes("kafka")) return COLORS.kafka;
-    if (lower.includes("oracle")) return COLORS.oracle;
-    if (lower.includes("mongo")) return COLORS.mongo;
-    if (lower.includes("unity")) return COLORS.unity;
-    if (lower.includes("c#")) return COLORS["c#"];
-    if (lower.includes("figma")) return COLORS.figma;
-    if (lower.includes("astro")) return COLORS.astro;
-    if (lower.includes("tailwind")) return COLORS.tailwind;
-    if (lower.includes("react")) return COLORS.react;
-    if (lower.includes("flutter")) return COLORS.flutter;
-    if (lower.includes("dart")) return COLORS.dart;
-    if (lower.includes("gitlab")) return COLORS.gitlab;
-    if (lower.includes("blender")) return COLORS.blender;
-    if (lower.includes("unreal")) return COLORS.unreal;
-    if (lower.includes("photoshop")) return COLORS.photoshop;
-    if (lower.includes("mysql")) return COLORS.mysql;
-    if (lower.includes("html")) return COLORS.html;
-    if (lower.includes("css")) return COLORS.css;
-    if (lower.includes("yeoman")) return COLORS.yeoman;
-    if (lower.includes("infinispan")) return COLORS.infinispan;
-    if (lower.includes("prometheus")) return COLORS.prometheus;
-    if (lower.includes("grafana")) return COLORS.grafana;
-    if (lower.includes("akhq")) return COLORS.akhq;
-    if (lower.includes("z-brush") || lower.includes("zbrush"))
-        return COLORS.zbrush;
-    if (lower.includes("maya")) return COLORS.maya;
+    // Buscar coincidencia exacta primero
+    if (TECH_BADGES[lower]) {
+        return `https://img.shields.io/badge/${TECH_BADGES[lower]}`;
+    }
 
-    return DEFAULT_COLOR;
+    // Buscar coincidencia parcial
+    for (const [key, value] of Object.entries(TECH_BADGES)) {
+        if (lower.includes(key) || key.includes(lower)) {
+            return `https://img.shields.io/badge/${value}`;
+        }
+    }
+
+    // Fallback: crear badge genérico con color desaturado
+    const label = techName.replace(/\s+/g, "_");
+    return `https://img.shields.io/badge/${label}-6A7A8A?style=flat`;
 }
 
-const color = getColor(name);
+const badgeUrl = getBadgeUrl(name);
 ---
 
-<span
-    class="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium border transition-all duration-300 hover:scale-105"
-    style={`background-color: ${color}15; color: ${color}; border-color: ${color}30;`}
->
-    {name}
-</span>
+<img
+    src={badgeUrl}
+    alt={name}
+    class="transition-all duration-300 hover:scale-105"
+    loading="lazy"
+/>
